@@ -22,7 +22,7 @@ export default function App() {
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-xl border-b border-white/10 bg-black/20">
         <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-          <h1 className="font-bold text-xl">Jordan.dev</h1>
+          <h1 className="font-bold text-xl">jordansanchez.github.io</h1>
 
           <div className="hidden md:flex gap-8 text-gray-300">
             <a href="#inicio" className="hover:text-cyan-400 transition">
@@ -66,12 +66,12 @@ export default function App() {
             </p>
 
             <h1 className="text-6xl md:text-7xl font-black leading-tight mb-8">
-              Jordan Sánchez Zúñiga
+              Jordan Sánchez Zuniga
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
               Bachiller en Ingeniería en Tecnologías de Información y estudiante
-              de Licenciatura enfocado en desarrollo web, backend,
+              de Licenciatura con conocimientos en desarrollo frontend y backend,
               automatización, IoT e integración de sistemas empresariales.
             </p>
 
@@ -300,7 +300,7 @@ export default function App() {
 
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
-                    src="/images/xmlsystem.png"
+                    src="/images/procesadorXML.png"
                     alt="Sistema XML"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
@@ -345,22 +345,22 @@ export default function App() {
               </h3>
 
               <p className="text-gray-400">
-                correo@email.com
+                josanchezzu@est.utn.ac.cr
               </p>
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
 
               <div className="mx-auto mb-4 text-cyan-400 text-4xl text-center">
-                💻
+                📱
               </div>
 
               <h3 className="font-bold mb-2">
-                GitHub
+                Teléfono
               </h3>
 
               <p className="text-gray-400">
-                github.com/usuario
+                +506 8940-5754
               </p>
             </div>
 
@@ -370,7 +370,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 py-8 text-center text-gray-500">
-        © 2026 Jordan Sánchez Zúñiga — Portafolio Profesional
+        © 2026 Jordan Sánchez Zuniga — Portafolio Profesional
       </footer>
     </div>
   )
