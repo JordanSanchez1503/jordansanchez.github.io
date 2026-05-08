@@ -217,7 +217,7 @@ export default function App() {
 
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
-                    src={`${import.meta.env.BASE_URL}public/images/arquitectura.png`}
+                    src={`${import.meta.env.BASE_URL}images/arquitectura.png`}
                     alt="Arquitectura"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
@@ -302,7 +302,7 @@ export default function App() {
 
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
-                    src={`${import.meta.env.BASE_URL}public/images/procesadorXML.png`}
+                    src={`${import.meta.env.BASE_URL}images/procesadorXML.png`}
                     alt="Sistema XML"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
