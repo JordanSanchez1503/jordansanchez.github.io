@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-
 import {
   Database,
   Globe,
@@ -218,7 +217,7 @@ export default function App() {
 
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
-                    src="/images/arquitectura.png"
+                    src={`${import.meta.env.BASE_URL}images/arquitectura.png`}
                     alt="Arquitectura"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
@@ -247,7 +246,8 @@ export default function App() {
                   <p className="text-gray-300 leading-relaxed mb-8">
                     Arquitectura completa para monitoreo inteligente de
                     medidores utilizando MQTT, Node-RED, Oracle XE,
-                    MySQL y Grafana.
+                    MySQL y Grafana. Actualmente este proyecto continúa en desarrollo,
+                    basado en el esqueleto arquitectónico que realice como base del sistema.
                   </p>
 
                   <ul className="space-y-4 text-gray-300">
@@ -286,7 +286,9 @@ export default function App() {
 
                   <p className="text-gray-300 leading-relaxed mb-8">
                     Aplicación para automatización y procesamiento masivo
-                    de archivos XML con monitoreo en tiempo real.
+                    de archivos XML con monitoreo en tiempo real. Este sistema actualmente
+                    se encuentra en uso dentro de la empresa de contabilidad HYH,
+                    apoyando procesos administrativos y contables.
                   </p>
 
                   <ul className="space-y-4 text-gray-300">
@@ -300,7 +302,7 @@ export default function App() {
 
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
-                    src="/images/procesadorXML.png"
+                    src={`${import.meta.env.BASE_URL}images/procesadorXML.png`}
                     alt="Sistema XML"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
