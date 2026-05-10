@@ -24,24 +24,24 @@ export default function App() {
           <h1 className="font-bold text-xl">jordansanchez.github.io</h1>
 
           <div className="hidden md:flex gap-8 text-gray-300">
-            <a href="#inicio" className="hover:text-cyan-400 transition">
-              Inicio
+            <a href="#home" className="hover:text-cyan-400 transition">
+              Home
             </a>
 
-            <a href="#tecnologias" className="hover:text-cyan-400 transition">
-              Tecnologías
+            <a href="#technologies" className="hover:text-cyan-400 transition">
+              Technologies
             </a>
 
-            <a href="#proyectos" className="hover:text-cyan-400 transition">
-              Proyectos
+            <a href="#projects" className="hover:text-cyan-400 transition">
+              Projects
             </a>
 
-            <a href="#arquitectura" className="hover:text-cyan-400 transition">
-              Arquitectura
+            <a href="#architecture" className="hover:text-cyan-400 transition">
+              Architecture
             </a>
 
-            <a href="#contacto" className="hover:text-cyan-400 transition">
-              Contacto
+            <a href="#contact" className="hover:text-cyan-400 transition">
+              Contact
             </a>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function App() {
 
       {/* HERO */}
       <section
-        id="inicio"
+        id="home"
         className="min-h-screen flex items-center px-8 max-w-7xl mx-auto"
       >
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -61,7 +61,7 @@ export default function App() {
             transition={{ duration: 0.7 }}
           >
             <p className="text-cyan-400 font-semibold mb-4 tracking-widest">
-              PORTAFOLIO PROFESIONAL
+              PROFESSIONAL PORTFOLIO
             </p>
 
             <h1 className="text-6xl md:text-7xl font-black leading-tight mb-8">
@@ -69,9 +69,9 @@ export default function App() {
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Bachiller en Ingeniería en Tecnologías de Información y estudiante
-              de Licenciatura con conocimientos en desarrollo frontend y backend,
-              automatización, IoT e integración de sistemas empresariales.
+              Holder of a Bachelor's Degree in Information Technology Engineering in Costa Rica,
+              currently pursuing a Licentiate Degree, with knowledge in frontend and backend
+              development, automation, IoT, and enterprise systems integration.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
@@ -96,17 +96,17 @@ export default function App() {
 
             <div className="flex gap-4 flex-wrap">
               <a
-                href="#proyectos"
+                href="#projects"
                 className="bg-cyan-400 hover:bg-cyan-300 text-black px-7 py-4 rounded-2xl font-bold transition"
               >
-                Ver Proyectos
+                View Projects
               </a>
 
               <a
-                href="#contacto"
+                href="#contact"
                 className="border border-white/20 hover:border-cyan-400 px-7 py-4 rounded-2xl transition"
               >
-                Contacto
+                Contact
               </a>
             </div>
           </motion.div>
@@ -120,16 +120,16 @@ export default function App() {
           >
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] p-10 shadow-2xl">
               <h2 className="text-3xl font-bold mb-8">
-                Tecnologías Principales
+                Main Technologies
               </h2>
 
               <div className="grid grid-cols-2 gap-6">
 
                 <div className="bg-black/30 rounded-2xl p-6">
                   <Database className="text-cyan-400 mb-4" size={40} />
-                  <h3 className="font-bold mb-2">Bases de Datos</h3>
+                  <h3 className="font-bold mb-2">Databases</h3>
                   <p className="text-gray-400 text-sm">
-                    Oracle XE y MySQL
+                    Oracle XE and MySQL
                   </p>
                 </div>
 
@@ -153,7 +153,7 @@ export default function App() {
                   <BarChart3 className="text-cyan-400 mb-4" size={40} />
                   <h3 className="font-bold mb-2">Dashboards</h3>
                   <p className="text-gray-400 text-sm">
-                    Grafana en tiempo real
+                    Real-time Grafana dashboards
                   </p>
                 </div>
 
@@ -163,12 +163,12 @@ export default function App() {
         </div>
       </section>
 
-      {/* TECNOLOGIAS */}
-      <section id="tecnologias" className="py-24 px-8">
+      {/* TECHNOLOGIES */}
+      <section id="technologies" className="py-24 px-8">
         <div className="max-w-7xl mx-auto">
 
           <h2 className="text-5xl font-black mb-16">
-            Stack Tecnológico
+            Technology Stack
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -198,17 +198,17 @@ export default function App() {
         </div>
       </section>
 
-      {/* PROYECTOS */}
-      <section id="proyectos" className="py-24 px-8">
+      {/* PROJECTS */}
+      <section id="projects" className="py-24 px-8">
         <div className="max-w-7xl mx-auto">
 
           <h2 className="text-5xl font-black mb-16">
-            Proyectos Destacados
+            Featured Projects
           </h2>
 
           <div className="space-y-12">
 
-            {/* PROYECTO 1 */}
+            {/* PROJECT 1 */}
             <motion.div
               whileHover={{ y: -8 }}
               className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] overflow-hidden"
@@ -218,7 +218,7 @@ export default function App() {
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
                     src={`${import.meta.env.BASE_URL}images/arquitectura.png`}
-                    alt="Arquitectura"
+                    alt="Architecture"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
                 </div>
@@ -240,28 +240,28 @@ export default function App() {
                   </div>
 
                   <h3 className="text-4xl font-black mb-6">
-                    Sistema IoT LoRaWAN
+                    LoRaWAN IoT System
                   </h3>
 
                   <p className="text-gray-300 leading-relaxed mb-8">
-                    Arquitectura completa para monitoreo inteligente de
-                    medidores utilizando MQTT, Node-RED, Oracle XE,
-                    MySQL y Grafana. Actualmente este proyecto continúa en desarrollo,
-                    basado en el esqueleto arquitectónico que realice como base del sistema.
+                    Complete architecture for intelligent meter monitoring
+                    using MQTT, Node-RED, Oracle XE, MySQL, and Grafana.
+                    This project is currently under development, based on the
+                    architectural foundation I designed for the system.
                   </p>
 
                   <ul className="space-y-4 text-gray-300">
-                    <li>✔ Integración MQTT con TTN</li>
-                    <li>✔ Validaciones automáticas</li>
-                    <li>✔ Procesamiento en tiempo real</li>
-                    <li>✔ Dashboards interactivos</li>
-                    <li>✔ Réplica Oracle → MySQL</li>
+                    <li>✔ MQTT integration with TTN</li>
+                    <li>✔ Automatic validations</li>
+                    <li>✔ Real-time processing</li>
+                    <li>✔ Interactive dashboards</li>
+                    <li>✔ Oracle → MySQL replication</li>
                   </ul>
                 </div>
               </div>
             </motion.div>
 
-            {/* PROYECTO 2 */}
+            {/* PROJECT 2 */}
             <motion.div
               whileHover={{ y: -8 }}
               className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] overflow-hidden"
@@ -281,29 +281,29 @@ export default function App() {
                   </div>
 
                   <h3 className="text-4xl font-black mb-6">
-                    Procesamiento Masivo XML
+                    Massive XML Processing
                   </h3>
 
                   <p className="text-gray-300 leading-relaxed mb-8">
-                    Aplicación para automatización y procesamiento masivo
-                    de archivos XML con monitoreo en tiempo real. Este sistema actualmente
-                    se encuentra en uso dentro de la empresa de contabilidad HYH,
-                    apoyando procesos administrativos y contables.
+                    Application for automation and large-scale XML file
+                    processing with real-time monitoring. This system is
+                    currently being used within the HYH accounting company,
+                    supporting accounting processes.
                   </p>
 
                   <ul className="space-y-4 text-gray-300">
-                    <li>✔ Procesamiento concurrente</li>
-                    <li>✔ Interfaz gráfica</li>
-                    <li>✔ Logs y monitoreo</li>
-                    <li>✔ Reprocesamiento automático</li>
-                    <li>✔ Gestión administrativa</li>
+                    <li>✔ Concurrent processing</li>
+                    <li>✔ Graphical interface</li>
+                    <li>✔ Logs and monitoring</li>
+                    <li>✔ Automatic reprocessing</li>
+                    <li>✔ Administrative management</li>
                   </ul>
                 </div>
 
                 <div className="bg-black/30 flex items-center justify-center p-10">
                   <img
                     src={`${import.meta.env.BASE_URL}images/procesadorXML.png`}
-                    alt="Sistema XML"
+                    alt="XML System"
                     className="rounded-3xl shadow-2xl border border-white/10"
                   />
                 </div>
@@ -314,17 +314,17 @@ export default function App() {
         </div>
       </section>
 
-      {/* CONTACTO */}
-      <section id="contacto" className="py-24 px-8">
+      {/* CONTACT */}
+      <section id="contact" className="py-24 px-8">
         <div className="max-w-5xl mx-auto text-center">
 
           <h2 className="text-5xl font-black mb-8">
-            Contacto
+            Contact
           </h2>
 
           <p className="text-gray-300 text-xl mb-12">
-            Disponible para oportunidades laborales en desarrollo web,
-            backend e integración de sistemas.
+            Available for job opportunities in web development,
+            backend, and systems integration.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -332,7 +332,7 @@ export default function App() {
             <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
               <MapPin className="mx-auto mb-4 text-cyan-400" size={40} />
 
-              <h3 className="font-bold mb-2">Ubicación</h3>
+              <h3 className="font-bold mb-2">Location</h3>
 
               <p className="text-gray-400">
                 Costa Rica
@@ -343,7 +343,7 @@ export default function App() {
               <Mail className="mx-auto mb-4 text-cyan-400" size={40} />
 
               <h3 className="font-bold mb-2">
-                Correo
+                Email
               </h3>
 
               <p className="text-gray-400">
@@ -358,7 +358,7 @@ export default function App() {
               </div>
 
               <h3 className="font-bold mb-2">
-                Teléfono
+                Phone
               </h3>
 
               <p className="text-gray-400">
@@ -372,7 +372,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 py-8 text-center text-gray-500">
-        © 2026 Jordan Sánchez Zuniga — Portafolio Profesional
+        © 2026 Jordan Sánchez Zuniga — Professional Portfolio
       </footer>
     </div>
   )
